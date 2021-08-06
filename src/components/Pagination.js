@@ -11,7 +11,7 @@ export const Pagination = ({postsPerPage, totalPosts, paginate}) => {
         <nav>
             <ul className="pagination">
             {pageNumbers.map((pageNumber)=>{
-                return(<li className="page-item"><a href="/#"className="page-link" onClick={()=>paginate(pageNumber)}>{pageNumber}</a></li>)
+                return(<li className="page-item"><button className="page-link" onClick={()=>paginate(pageNumber)}>{pageNumber}</button></li>)
             })
              }
             </ul>          

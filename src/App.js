@@ -27,7 +27,7 @@ const currentPostsArr = posts.slice(indexOfFirstPost, indexOfLastPost);
 
   return (
     <div className="container">
-      <h1>My Blog</h1>
+      <h1>Test Blog</h1>
       <Posts className="row"posts= {currentPostsArr} loading={loading} />
       <Pagination postsPerPage={postsPerPage} totalPosts={posts.length} paginate={paginate}/>
     </div>
